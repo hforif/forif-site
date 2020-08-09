@@ -9,26 +9,31 @@ export default function Studies({ data, location }) {
   return (
     <Layout sideList={0} pathName={location.pathname}>
       <div className={styles.wrapper}>
-        {edges.map((value, index)=><Template key={index} title={value.node.frontmatter.title} date={value.node.frontmatter.date} html={value.node.html}/>)}
+        {edges.map((value, index)=><Template key={index} frontmatter={value.node.frontmatter} html={value.node.html}/>)}
       </div>
     </Layout>
   )
 }
-function Template({title, date, html}){
+function Template({frontmatter, html}){
   return(
     <div className={styles.announcementWrapper}>
       <div className={styles.frontmatter}>
         <h1 style={{
           margin: '5px',
         }}>
-          {title}
+          {frontmatter.title}
         </h1>
         <span style={{
           color: 'gray',
           fontSize: '0.8rem',
-
         }}>
-          <i>{date}</i>
+          {frontmatter.date}
+        </span><br/>
+        <span style={{
+          color: 'gray',
+          fontSize: '0.8rem',
+        }}>
+          <i>posted by {frontmatter.create}</i>
         </span>
       </div>
       {renderHTML(html)}
@@ -44,6 +49,7 @@ export const pageQuery = graphql`
         frontmatter {
           title
           date
+          create
         }
         html
       }

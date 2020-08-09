@@ -4,7 +4,6 @@
     margin-left: 210px;
     min-height: 1000px;
     height:100%;
-    background-color: slateblue;
 }
 
 .bodyWrapperNone{
@@ -12,6 +11,4 @@
     box-sizing: border-box;
     margin-top: 100px;
     min-height: 1000px;
-    background-color: slateblue;
-
 }

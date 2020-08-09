@@ -5,7 +5,9 @@ html, body{
     border: 0;
     height: 100%;
 }
-
+p {
+    line-height: 170%;
+}
 /* HTML5 display-role reset for older browsers */
 
 

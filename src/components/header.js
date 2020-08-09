@@ -7,9 +7,9 @@ export default function Header({ pathName, headerRef }) {
   return (
     <div className={styles.wrapper} ref={headerRef}>
       <div className={styles.logoWrapper}>
-        <a href={`/`}>
+        <Link to={`/`}>
           <img src={logo} alt={`Forif Logo`} className={styles.logo}/>
-        </a>
+        </Link>
       </div>
       <div className={styles.menuWrapper}>
         <ul>

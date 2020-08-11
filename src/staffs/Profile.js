@@ -3,13 +3,30 @@ import styles from "./Profile.module.css"
 import profileInfo from "./profileInfo.json"
 
 function Profile () {
-    const managerList = profileInfo.semester.first.manager;
-    const mentoList = profileInfo.semester.first.mento;
+    const semester_1st = profileInfo.semester.first;
+    const semester_2nd = profileInfo.semester.second;
 
     return (
         <div className={styles.profileSection}>
             <h3 className={styles.semester}>1학기</h3>
-            <div className={styles.semesterSection}>
+            <SemesterBlock
+                semester = {semester_1st}
+            />
+            <hr/>
+            <h3 className={styles.semester}>2학기</h3>
+            <SemesterBlock
+                semester = {semester_2nd}
+            />
+        </div>
+    )
+}
+
+const SemesterBlock = ({semester}) => {
+    const managerList = semester.manager;
+    const mentoList = semester.mento;
+
+    return (
+        <div className={styles.semesterSection}>
                 <h4 className={styles.jobTitle}>운영진</h4>
                 <div className={styles.profileCells}>
                     <ProfileCell
@@ -22,8 +39,6 @@ function Profile () {
                         people = {mentoList}
                     />
                 </div>
-            </div>
-            <hr/>
         </div>
     )
 }

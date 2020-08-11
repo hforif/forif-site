@@ -13,7 +13,6 @@ export default function Staffs({location}) {
 
   return (
     <Layout sideList={yearList} setSideCurrent={setShown} pathName={location.pathname}>
-      <p> Clicked!!!</p>
       <Profile></Profile>
     </Layout>
   )

@@ -1,5 +1,21 @@
-.footerWrapper{
+.footerWrapper {
     height: 130px;
     width: 100%;
-    background-color: gray;
+    background-color: #AAAAAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerTextWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.footerTextWrapper p {
+    margin: 5px 0;
 }

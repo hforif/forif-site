@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "./header.module.css"
-import logo from "../images/logo.png"
+import logo from "../../images/logo.png"
 import { Link } from "gatsby"
 
 export default function Header({ pathName, headerRef }) {
@@ -13,8 +13,6 @@ export default function Header({ pathName, headerRef }) {
       </div>
       <div className={styles.menuWrapper}>
         <ul>
-          <li><Link to={"/About"} className={styles[`menuLink${pathName === `/About` ? `On` : `Off`}`]}>About</Link>
-          </li>
           <li><Link to={"/Announcement"} className={styles[`menuLink${pathName === `/Announcement` ? `On` : `Off`}`]}>Announcement</Link>
           </li>
           <li><Link to={"/Staffs"} className={styles[`menuLink${pathName === `/Staffs` ? `On` : `Off`}`]}>Staffs</Link>

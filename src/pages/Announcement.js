@@ -1,7 +1,7 @@
 import React from "react"
 import renderHTML from 'react-render-html';
 
-import Layout from "../components/layout"
+import Layout from "../components/layout/layout"
 import styles from "./Announcement.module.css"
 
 export default function Studies({ data, location }) {

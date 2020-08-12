@@ -132,6 +132,11 @@
     justify-content: center;
   }
 
+  .historyWrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
   .textWrapperVertical {
     width: 70%;
     margin: 0 auto;
@@ -161,6 +166,11 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .historyWrapper {
     justify-content: center;
     align-items: center;
   }

@@ -1,13 +1,13 @@
 import React from "react"
-import Layout from "../components/layout"
-import styles from "./About.module.css"
+import Layout from "../components/layout/layout"
+import styles from "./index.module.css"
 
 export default function Studies({ location }) {
   return (
     <Layout sideList={0} pathName={location.pathname}>
       <div className={styles.layoutWrapper}>
         <div className={styles.imageWrapper}>
-          <img src={require("../images/mainImage.jpg")} />
+          <img src={require("../images/mainImage.jpg")} alt="mainImage" />
           <div className={styles.textWrapperHorizontal}>
             <div className={styles.textFormat}>
               <p>

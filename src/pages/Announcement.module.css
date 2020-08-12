@@ -26,6 +26,12 @@
     margin: 0 50px;
     text-align: center;
 }
+.box{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
 
 /* PC (해상도 1024px)*/
 @media all and (min-width:1024px) {

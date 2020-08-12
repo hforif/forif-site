@@ -1,52 +1,76 @@
-
-.wrapper{
+.wrapper {
     position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     top: 0;
     width: 100%;
     height: 60px;
+    padding: 0 75px;
     transition: 0.5s;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255, 255, 255, 0.7);
 }
-.logoWrapper{
+
+.logoWrapper {
     display: inline-block;
     height: 100%;
-    float: left;
 }
-.logo{
+
+.logo {
     width: auto;
     height: 100%;
 }
-.menuWrapper{
+
+.menuWrapper {
     display: inline-block;
-    float: right;
     height: 100%;
     vertical-align: middle;
 }
+
 .menuWrapper ul {
+    display: flex;
+    flex-direction: row;
     list-style: none;
     margin: 0;
     padding: 0;
     height: 100%;
-
 }
+
 .menuWrapper ul li {
     line-height: 60px;
     margin: 0 15px;
     padding: 0;
     border: 0;
-
     float: left
 }
+
+.menuWrapper ul li a {
+    text-decoration: none;
+}
+
 .menuLinkOn {
     text-decoration: none;
     font-size: 1.1rem;
-    color: rgba(0,0,0,1);
+    color: rgba(0, 0, 0, 1);
 }
-.menuLinkOff{
+
+.menuLinkOff {
     text-decoration: none;
     font-size: 1.1rem;
-    color: rgba(0,0,0,0.4);
+    color: rgba(0, 0, 0, 0.4);
 }
-.menuLinkOff:hover{
-    color: rgba(0,0,0,1);
+
+.menuLinkOff:hover {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    transition: 0.5s ease-in-out;
+}
+
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
 }

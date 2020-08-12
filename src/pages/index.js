@@ -7,7 +7,7 @@ export default function Studies({ location }) {
     <Layout sideList={0} pathName={location.pathname}>
       <div className={styles.layoutWrapper}>
         <div className={styles.imageWrapper}>
-          <img src={require("../images/mainImage.jpg")} />
+          <img src={require("../images/mainImage.jpg")} alt="mainImage" />
           <div className={styles.textWrapperHorizontal}>
             <div className={styles.textFormat}>
               <p>

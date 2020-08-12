@@ -3,7 +3,7 @@ import styles from "./Profile.module.css"
 // import profileInfo from "./profileInfo.json"
 
 function Profile ({year}) {
-    const clicked_year = require(`../staffs/staffs_${year}.json`);
+    const clicked_year = require(`../../staffs/staffs_${year}.json`);
     const semester_1st = clicked_year.semester.first;
     const semester_2nd = clicked_year.semester.second;
 

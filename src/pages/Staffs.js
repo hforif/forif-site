@@ -1,6 +1,6 @@
 import React,{useState} from "react"
 import Layout from "../components/layout/layout"
-import Profile from "../staffs/Profile"
+import Profile from "../components/staffs/Profile"
 
 export default function Staffs({location}) {
   const [shown, setShown] = useState(0);

@@ -3,6 +3,7 @@ import Layout from "../components/layout/layout"
 import styles from "./index.module.css"
 import axios from "axios"
 import configs from "../configs"
+import Feed from "../components/about/instagramFeed"
 
 export default function Studies({ location }) {
 
@@ -16,10 +17,6 @@ export default function Studies({ location }) {
   const getInstagram = async () => {
     const res = await axios.get(`https://graph.instagram.com/me/media?fields=media_type,media_url,permalink&access_token=${accessToken}`)
     setInstagram(res.data.data)
-  }
-
-  const tempStyle = {
-    width: "200px",
   }
 
   return (
@@ -120,7 +117,7 @@ export default function Studies({ location }) {
         <div className="temp feeds">
           <h3>FORIF Instagram</h3>
           {instagrams.map(feed => (
-            <a href={feed.permalink}><img src={feed.media_url} alt="thum" style={tempStyle}></img></a>
+            <Feed thumnail={feed.media_url} link={feed.permalink} />
           ))}
         </div>
       </div>

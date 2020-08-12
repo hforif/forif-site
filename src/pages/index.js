@@ -7,7 +7,6 @@ import Feed from "../components/about/instagramFeed"
 
 export default function Studies({ location }) {
 
-  const accessToken = configs.ACCESS_TOKEN
   const [instagrams, setInstagram] = useState([]);
 
   useEffect(() => {
@@ -15,7 +14,7 @@ export default function Studies({ location }) {
   }, [])
 
   const getInstagram = async () => {
-    const res = await axios.get(`https://graph.instagram.com/me/media?fields=media_type,media_url,permalink&access_token=${accessToken}`)
+    const res = await axios.get(`https://graph.instagram.com/me/media?fields=media_type,media_url,permalink&access_token=${configs.ACCESS_TOKEN}`)
     setInstagram(res.data.data)
   }
 
@@ -115,7 +114,6 @@ export default function Studies({ location }) {
           </ul>
         </div>
         <div className="temp feeds">
-          <h3>FORIF Instagram</h3>
           {instagrams.map(feed => (
             <Feed thumnail={feed.media_url} link={feed.permalink} />
           ))}

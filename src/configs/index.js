@@ -1,3 +1,3 @@
 export default {
-    ACCESS_TOKEN: process.env.REACT_APP_ACCESS_TOKEN
+    ACCESS_TOKEN: process.env.GATSBY_INSTAGRAM_ACCESS_TOKEN,
 }

@@ -10,6 +10,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: 'hackathon',
+        path: `${__dirname}/src/hackathon`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `announcements`,
         path: `${__dirname}/src/announcements`,
       },

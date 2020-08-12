@@ -1,0 +1,86 @@
+{
+    "semester" : {
+        "first" : [
+            {
+                "name" : "고양이가 세상을 '집'애한다",
+                "teamName" : "python반",
+                "member" : ["AAA","BBB"],
+                "summary" : "고양이는 귀여워",
+                "desc" : "고먐미"
+            },
+            {
+                "name" : "고양이가 세상을 '집'애한다",
+                "teamName" : "python반",
+                "member" : ["AAA","BBB"],
+                "summary" : "고양이는 귀여워",
+                "desc" : "고먐미"
+            },
+            {
+                "name" : "고양이가 세상을 '집'애한다",
+                "teamName" : "python반",
+                "member" : ["AAA","BBB"],
+                "summary" : "고양이는 귀여워",
+                "desc" : "고먐미"
+            },
+            {
+                "name" : "고양이가 세상을 '집'애한다",
+                "teamName" : "python반",
+                "member" : ["AAA","BBB"],
+                "summary" : "고양이는 귀여워",
+                "desc" : "고먐미"
+            },
+            {
+                "name" : "고양이가 세상을 '집'애한다",
+                "teamName" : "python반",
+                "member" : ["AAA","BBB"],
+                "summary" : "고양이는 귀여워",
+                "desc" : "고먐미"
+            },
+            {
+                "name" : "고양이가 세상을 '집'애한다",
+                "teamName" : "python반",
+                "member" : ["AAA","BBB"],
+                "summary" : "고양이는 귀여워",
+                "desc" : "고먐미"
+            }
+        ],
+        "second" : [
+            {
+                "name" : "고양이가 세상을 '집'애한다",
+                "teamName" : "python반",
+                "member" : ["AAA","BBB"],
+                "summary" : "고양이는 귀여워",
+                "desc" : "고먐미"
+            },
+            {
+                "name" : "고양이가 세상을 '집'애한다",
+                "teamName" : "python반",
+                "member" : ["AAA","BBB"],
+                "summary" : "고양이는 귀여워",
+                "desc" : "고먐미"
+            },
+            {
+                "name" : "고양이가 세상을 '집'애한다",
+                "teamName" : "python반",
+                "member" : ["AAA","BBB"],
+                "summary" : "고양이는 귀여워",
+                "desc" : "고먐미"
+            },
+            {
+                "name" : "고양이가 세상을 '집'애한다",
+                "teamName" : "python반",
+                "member" : ["AAA","BBB"],
+                "summary" : "고양이는 귀여워",
+                "desc" : "고먐미"
+            },
+            {
+                "name" : "고양이가 세상을 '집'애한다",
+                "teamName" : "python반",
+                "member" : ["AAA","BBB"],
+                "summary" : "고양이는 귀여워",
+                "desc" : "고먐미"
+            }
+        ]
+    }
+    
+}

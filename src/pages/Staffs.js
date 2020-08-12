@@ -10,10 +10,13 @@ export default function Staffs({location}) {
   for (var i=2014; i<=currentYear; i++){
       yearList.unshift(i);
   }
+  const year = yearList[shown];
 
   return (
     <Layout sideList={yearList} setSideCurrent={setShown} pathName={location.pathname}>
-      <Profile></Profile>
+      <Profile
+        year = {year}
+      />
     </Layout>
   )
 }

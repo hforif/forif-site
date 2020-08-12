@@ -1,10 +1,11 @@
 import React from "react"
 import styles from "./Profile.module.css"
-import profileInfo from "./profileInfo.json"
+// import profileInfo from "./profileInfo.json"
 
-function Profile () {
-    const semester_1st = profileInfo.semester.first;
-    const semester_2nd = profileInfo.semester.second;
+function Profile ({year}) {
+    const clicked_year = require(`./staffs_${year}.json`);
+    const semester_1st = clicked_year.semester.first;
+    const semester_2nd = clicked_year.semester.second;
 
     return (
         <div className={styles.profileSection}>

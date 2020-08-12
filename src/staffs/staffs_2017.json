@@ -1,0 +1,55 @@
+{
+    "semester":
+        { 
+            "first" :
+                {
+                    "manager" : [
+                        {"name": "김정은", "position": "회장"},
+                        {"name": "임규민", "position": "부회장"},
+                        {"name": "김태현", "position": "총무"},
+                        {"name": "김정은", "position": "회장"},
+                        {"name": "임규민", "position": "부회장"},
+                        {"name": "김태현", "position": "총무"},
+                        {"name": "김정은", "position": "회장"},
+                        {"name": "임규민", "position": "부회장"},
+                        {"name": "김태현", "position": "총무"}
+                    ],
+                    "mento" : [
+                        {"name": "김정은", "position": "회장"},
+                        {"name": "임규민", "position": "부회장"},
+                        {"name": "김태현", "position": "총무"},
+                        {"name": "김정은", "position": "회장"},
+                        {"name": "임규민", "position": "부회장"},
+                        {"name": "김태현", "position": "총무"},
+                        {"name": "김정은", "position": "회장"},
+                        {"name": "임규민", "position": "부회장"},
+                        {"name": "김태현", "position": "총무"}
+                    ]
+                },
+            "second" :
+                {
+                    "manager" : [
+                        {"name": "김정은", "position": "회장"},
+                        {"name": "임규민", "position": "부회장"},
+                        {"name": "김태현", "position": "총무"},
+                        {"name": "김정은", "position": "회장"},
+                        {"name": "임규민", "position": "부회장"},
+                        {"name": "김태현", "position": "총무"},
+                        {"name": "김정은", "position": "회장"},
+                        {"name": "임규민", "position": "부회장"},
+                        {"name": "김태현", "position": "총무"}
+                    ],
+                    "mento" : [
+                        {"name": "김정은", "position": "회장"},
+                        {"name": "임규민", "position": "부회장"},
+                        {"name": "김태현", "position": "총무"},
+                        {"name": "김정은", "position": "회장"},
+                        {"name": "임규민", "position": "부회장"},
+                        {"name": "김태현", "position": "총무"},
+                        {"name": "김정은", "position": "회장"},
+                        {"name": "임규민", "position": "부회장"},
+                        {"name": "김태현", "position": "총무"}
+                    ]
+                }
+        }
+}

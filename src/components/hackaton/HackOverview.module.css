@@ -33,3 +33,49 @@
     color: #6E6C6C;
     opacity: 1;
 }
+
+.productModal {
+    border: 2px solid red;
+    /* top : 50%;
+    left : 50%;
+    right : auto;
+    bottom : auto;
+    margin-right : -50%; */
+    transform : translate(-50%, -50%);
+}
+
+.productOverlay {
+    border : 2px solid blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.modalImage {
+    object-fit : contain;
+    width: 50%;
+    height : 50%;
+}
+
+.modalProductName {
+
+}
+
+.modalTeamName {
+
+}
+
+.modalTeamMember {
+
+}
+
+.modalSummary{
+
+}
+
+.modalDesc{
+    
+}

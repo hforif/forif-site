@@ -1,22 +1,85 @@
 {
     "semester" : {
         "first" : [
-            {"name" : "잠의 숲"},
-            {"name" : "유튜버 키우기"},
-            {"name" : "너네 뭐했니"},
-            {"name" : "나 사실"},
-            {"name" : "해커톤 열심히 안봄" },
-            {"name" : "동진이랑 양꼬치 먹음"},
-            {"name" : "맛없었음"}
+            {
+                "name" : "맛집 웹사이트",
+                "teamName" : "django반",
+                "member" : ["AAA","BBB"],
+                "summary" : "한양대에는 사실 맛집이 없습니다",
+                "desc" : "그렇다고 합니다"
+            },
+            {
+                "name" : "맛집 웹사이트",
+                "teamName" : "django반",
+                "member" : ["AAA","BBB"],
+                "summary" : "한양대에는 사실 맛집이 없습니다",
+                "desc" : "그렇다고 합니다"
+            },
+            {
+                "name" : "맛집 웹사이트",
+                "teamName" : "django반",
+                "member" : ["AAA","BBB"],
+                "summary" : "한양대에는 사실 맛집이 없습니다",
+                "desc" : "그렇다고 합니다"
+            },
+            {
+                "name" : "맛집 웹사이트",
+                "teamName" : "django반",
+                "member" : ["AAA","BBB"],
+                "summary" : "한양대에는 사실 맛집이 없습니다",
+                "desc" : "그렇다고 합니다"
+            },
+            {
+                "name" : "맛집 웹사이트",
+                "teamName" : "django반",
+                "member" : ["AAA","BBB"],
+                "summary" : "한양대에는 사실 맛집이 없습니다",
+                "desc" : "그렇다고 합니다"
+            },
+            {
+                "name" : "맛집 웹사이트",
+                "teamName" : "django반",
+                "member" : ["AAA","BBB"],
+                "summary" : "한양대에는 사실 맛집이 없습니다",
+                "desc" : "그렇다고 합니다"
+            }
         ],
         "second" : [
-            {"name" : "힐링의 숲"},
-            {"name" : "유튜버 키우기"},
-            {"name" : "너네 뭐했니"},
-            {"name" : "나 사실"},
-            {"name" : "해커톤 열심히 안봄" },
-            {"name" : "동진이랑 양꼬치 먹음"},
-            {"name" : "맛없었음"}
+            {
+                "name" : "맛집 웹사이트",
+                "teamName" : "django반",
+                "member" : ["AAA","BBB"],
+                "summary" : "한양대에는 사실 맛집이 없습니다",
+                "desc" : "그렇다고 합니다"
+            },
+            {
+                "name" : "맛집 웹사이트",
+                "teamName" : "django반",
+                "member" : ["AAA","BBB"],
+                "summary" : "한양대에는 사실 맛집이 없습니다",
+                "desc" : "그렇다고 합니다"
+            },
+            {
+                "name" : "맛집 웹사이트",
+                "teamName" : "django반",
+                "member" : ["AAA","BBB"],
+                "summary" : "한양대에는 사실 맛집이 없습니다",
+                "desc" : "그렇다고 합니다"
+            },
+            {
+                "name" : "맛집 웹사이트",
+                "teamName" : "django반",
+                "member" : ["AAA","BBB"],
+                "summary" : "한양대에는 사실 맛집이 없습니다",
+                "desc" : "그렇다고 합니다"
+            },
+            {
+                "name" : "맛집 웹사이트",
+                "teamName" : "django반",
+                "member" : ["AAA","BBB"],
+                "summary" : "한양대에는 사실 맛집이 없습니다",
+                "desc" : "그렇다고 합니다"
+            }
         ]
     }
     

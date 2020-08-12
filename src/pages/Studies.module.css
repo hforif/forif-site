@@ -1,0 +1,12 @@
+.wrapper{
+    box-sizing: border-box;
+    padding: 10px;
+}
+.title{
+    display: inline-block;
+}
+.mentor{
+    margin-left : 20px;
+    color: gray;
+    font-size: 0.8rem;
+}

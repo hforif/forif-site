@@ -1,11 +1,22 @@
-import React, {useEffect, useRef} from "react"
+import React, { useEffect, useRef, useState } from "react"
 import Header from "./header"
 import Footer from "./footer"
 import Sidebar from "./sidebar"
 import "./reset.css"
 import styles from "./layout.module.css"
 
-export default function Layout({ sideList, setSideCurrent,pathName, children }) {
+export default function Layout({sideList, setSideCurrent,pathName, children }) {
+  const [width, setWidth] = useState(window.innerWidth)
+  useEffect(() => {
+    const handleWidth = () => {
+      setWidth(window.innerWidth)
+      console.log(width)
+    }
+    window.addEventListener("resize", handleWidth)
+    return () => {
+      window.removeEventListener("resize", handleWidth)
+    }
+  })
 
   /*How to make Scroll Event*/
   useEffect(()=>{
@@ -15,13 +26,14 @@ export default function Layout({ sideList, setSideCurrent,pathName, children }) 
   const headerRef = useRef(null);
   const bodyRef = useRef(null);
   const onScrollEvent = (e) => {
-    headerRef.current.style.top = e.srcElement.scrollingElement.scrollTop === 0 ? `0px` : `-60px`;
+    headerRef.current.style.top = e.srcElement.scrollingElement.scrollTop === 0 ? `0px` : `-400px`;
   }
 
   return (
     <div>
-      <Header pathName={pathName} headerRef={headerRef}/>
-      {sideList !== 0 && <Sidebar sideList={sideList} setSideCurrent={setSideCurrent}/>}
+      <Header width={width} pathName={pathName} headerRef={headerRef}/>
+      {sideList !== 0 && <div className={styles.sidebar}><Sidebar width={width}sideList={sideList} setSideCurrent={setSideCurrent} /></div>}
+
       <div className={styles[`bodyWrapper${(sideList === 0) ? `None` : ``}`]} ref={bodyRef}>
         {children}
       </div>

@@ -14,6 +14,7 @@ export default function Studies({ data, location }) {
     </Layout>
   )
 }
+
 function Template({frontmatter, html}){
   return(
     <div className={styles.announcementWrapper}>
@@ -43,7 +44,7 @@ function Template({frontmatter, html}){
 
 export const pageQuery = graphql`
   query {
-  allMarkdownRemark (sort: { fields: frontmatter___number, order: DESC }) {
+  allMarkdownRemark (filter: {fileAbsolutePath: {regex: "/announcements/"}} sort:{fields: frontmatter___number, order: DESC}) {
     edges {
       node {
         frontmatter {

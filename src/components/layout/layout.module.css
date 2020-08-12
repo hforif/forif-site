@@ -1,7 +1,6 @@
 .bodyWrapper{
     box-sizing: border-box;
-    margin-top: 100px;
-    margin-left: 210px;
+    margin: 100px 210px 0px 210px;
     min-height: 1000px;
     height:100%;
 }
@@ -11,4 +10,34 @@
     box-sizing: border-box;
     margin-top: 100px;
     min-height: 1000px;
+}
+
+.sidebar{
+
+}
+.header{
+
+}
+/* PC (해상도 1024px)*/
+@media all and (min-width:1024px) {
+
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+    .bodyWrapper{
+        margin-right: 0px;
+    }
+}
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {
+
+    .header{
+        display: none;
+        text-align: center;
+    }
+    .bodyWrapper{
+        margin: 100px 0 0 0;
+    }
 }

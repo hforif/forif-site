@@ -1,4 +1,3 @@
-
 .wrapper{
     position: fixed;
     top: 0;
@@ -6,15 +5,19 @@
     height: 60px;
     transition: 0.5s;
     background-color: rgba(255,255,255,0.7);
+
 }
 .logoWrapper{
     display: inline-block;
     height: 100%;
-    float: left;
+    margin: 0;
 }
+
 .logo{
     width: auto;
     height: 100%;
+    padding: 10px;
+    margin: 0;
 }
 .menuWrapper{
     display: inline-block;
@@ -34,9 +37,29 @@
     margin: 0 15px;
     padding: 0;
     border: 0;
-
     float: left
 }
+
+.menuWrapperMobile{
+    display: inline-block;
+    top: 0;
+    vertical-align: middle;
+    background-color: #898989;
+
+}
+.menuWrapperMobile ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.menuWrapperMobile ul li {
+    line-height: 40px;
+    margin: 0 15px;
+    padding: 0;
+    border: 0;
+}
+
 .menuLinkOn {
     text-decoration: none;
     font-size: 1.1rem;
@@ -49,4 +72,46 @@
 }
 .menuLinkOff:hover{
     color: rgba(0,0,0,1);
+}
+
+.hamburgerMenu{
+    display: inline-block;
+    position: absolute;
+    vertical-align: middle;
+    float: right;
+    top: 20px;
+    right: 20px;
+}
+
+
+/* PC (해상도 1024px)*/
+@media all and (min-width:1024px) {
+    .hamburgerMenu{
+        display: none;
+    }
+    .menuWrapperMobile{
+        display: none;
+    }
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+    .hamburgerMenu{
+        display: none;
+    }
+    .menuWrapperMobile{
+        display: none;
+    }
+}
+@media all and (max-width:767px) {
+    .wrapper{
+        text-align: center;
+    }
+    .logoWrapper{
+        margin: 0 auto;
+    }
+    .menuWrapper{
+       display: none;
+    }
+
 }

@@ -42,3 +42,39 @@
     color: rgba(0,0,0,1);
 }
 
+.bottomSidebarWrapper{
+    position: fixed;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    background: linear-gradient(to top,#898989,#E0E0E0);
+}
+.bottomSidebarWrapper ul{
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+.bottomSidebarWrapper ul::-webkit-scrollbar{
+    display: none;
+}
+
+.bottomSidebarWrapper ul li{
+    display: inline-block;
+    cursor: Pointer;
+    height: 40px;
+    margin: 0 15px;
+}
+.bottomSidebarWrapper ul li button{
+    display: inline;
+    line-height: 40px;
+}
+

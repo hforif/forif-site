@@ -1,6 +1,6 @@
 import React from "react"
 import './index.css'
-import Layout from "../components/layout"
+import Layout from "../components/layout/layout"
 
 export default function Home({location}) {
   return (

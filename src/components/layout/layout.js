@@ -5,12 +5,15 @@ import Sidebar from "./sidebar"
 import "./reset.css"
 import styles from "./layout.module.css"
 
-export default function Layout({sideList, setSideCurrent,pathName, children }) {
-  const [width, setWidth] = useState(window.innerWidth)
+export default function Layout({ sideList, setSideCurrent, pathName, children }) {
+  // for SSR rendering
+  const [width,setWidth] = useState(1500);
+
+
   useEffect(() => {
+
     const handleWidth = () => {
       setWidth(window.innerWidth)
-      console.log(width)
     }
     window.addEventListener("resize", handleWidth)
     return () => {
@@ -19,20 +22,25 @@ export default function Layout({sideList, setSideCurrent,pathName, children }) {
   })
 
   /*How to make Scroll Event*/
-  useEffect(()=>{
-    window.addEventListener('scroll',onScrollEvent);
-    return ()=>window.removeEventListener('scroll',onScrollEvent);
-  },[]);
-  const headerRef = useRef(null);
-  const bodyRef = useRef(null);
+  useEffect(() => {
+    setWidth(window.innerWidth);
+    window.addEventListener("scroll", onScrollEvent)
+    return () => window.removeEventListener("scroll", onScrollEvent)
+  }, [])
+
+  const headerRef = useRef(null)
+  const bodyRef = useRef(null)
   const onScrollEvent = (e) => {
-    headerRef.current.style.top = e.srcElement.scrollingElement.scrollTop === 0 ? `0px` : `-400px`;
+    headerRef.current.style.top = e.srcElement.scrollingElement.scrollTop === 0 ? `0px` : `-400px`
   }
+
 
   return (
     <div>
       <Header width={width} pathName={pathName} headerRef={headerRef}/>
-      {sideList !== 0 && <div className={styles.sidebar}><Sidebar width={width}sideList={sideList} setSideCurrent={setSideCurrent} /></div>}
+      {sideList !== 0 &&
+      <div className={styles.sidebar}><Sidebar width={width} sideList={sideList} setSideCurrent={setSideCurrent}/>
+      </div>}
 
       <div className={styles[`bodyWrapper${(sideList === 0) ? `None` : ``}`]} ref={bodyRef}>
         {children}
@@ -44,7 +52,7 @@ export default function Layout({sideList, setSideCurrent,pathName, children }) {
 Layout.defaultProps = {
   sideList: [],
   setSideCurrent: (pressed) => {
-    console.log(pressed);
+    console.log(pressed)
   },
-  pathName: null,
+  pathName: null
 }

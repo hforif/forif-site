@@ -30,9 +30,9 @@ export default function Header({ width, pathName, headerRef }) {
     <div className={styles.wrapper} ref={headerRef}>
       {!isOpen &&
       <animated.div className={styles.logoWrapper} style={logoSlide}>
-        <a href={`/`}>
+        <Link to={`/`}>
           <img src={logo} alt={`Forif Logo`} className={styles.logo}/>
-        </a>
+        </Link>
       </animated.div>
       }
 

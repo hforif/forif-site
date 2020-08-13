@@ -22,6 +22,7 @@ export default function Sidebar ({width, sideList, setSideCurrent}){
       setBottomOn(false);
     }
   },[width])
+
   return(
     <div>
       {

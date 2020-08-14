@@ -1,19 +1,28 @@
 ---
 category : Android
-title: We go Android!!
+title: 안드로이드 앱 기초 반
 mentor: 임규민
-introduction : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis auctor lacus, id condimentum nunc. Vivamus sed vestibulum lorem. Donec volutpat rutrum erat nec pretium. In sed nibh ac massa laoreet suscipit id ac sapien. Maecenas elit dui, convallis ac urna et, volutpat pharetra lectus. Maecenas non faucibus neque. Aenean eu massa et sapien sodales aliquet. Mauris vulputate lacinia ornare. Fusce in dolor sit amet enim efficitur porta. In ornare in nibh et commodo. Cras et varius mi, a suscipit sapien. Nulla in ornare risus, a tempor diam. Fusce eleifend est in augue facilisis eleifend.
-              
-                Nunc ullamcorper vestibulum ex a interdum. Phasellus aliquet nulla vitae elit tristique semper. Aliquam sit amet faucibus mauris. Morbi ut eros id dolor ullamcorper iaculis. Donec facilisis at purus eget euismod. Cras commodo eget libero ac mollis. Ut sit amet urna congue, consequat nisi eu, tempus leo. Vivamus sit amet eleifend libero. Duis suscipit, risus quis mattis dapibus, massa eros congue nulla, vitae congue mauris lacus sit amet mauris. Sed tempor ut lacus eu pulvinar. Phasellus dignissim rhoncus placerat. Integer vitae tortor sed nisi molestie accumsan. Donec quis nulla tellus. Aliquam pharetra, justo in aliquam interdum, velit nulla faucibus mauris, nec malesuada nunc ligula ut dolor. Cras congue nec tellus eget tristique. Vivamus vitae leo nisl.
-               
-               Donec tempor quis purus id luctus. Nunc volutpat consectetur est, id dapibus sapien maximus quis. Morbi viverra nunc tristique, porttitor dui id, tristique purus. Suspendisse scelerisque neque ac dolor mollis, at egestas mi commodo. Curabitur et iaculis eros, tincidunt blandit nisl. Curabitur vestibulum enim enim, sed rutrum purus dignissim ut. Cras suscipit pellentesque velit, non mollis justo sodales et. Donec dignissim dolor erat, eu auctor enim cursus vel. Sed vitae sapien consectetur, dapibus lectus a, aliquam tellus. Duis ornare nisl ac urna lacinia, at sodales dui suscipit. Fusce luctus, eros a rhoncus gravida, urna ipsum ullamcorper odio, ut tempus mauris diam a dui. Pellentesque vulputate justo ligula, sit amet pharetra nibh condimentum vel. Donec eu dapibus nunc, non commodo lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-               
-               Proin vulputate enim non sem malesuada, at placerat ligula vehicula. Aenean cursus, neque non aliquam euismod, enim ipsum bibendum sapien, sit amet vulputate nisl purus ut orci. Maecenas non metus nec turpis suscipit volutpat. Sed eget magna lectus. Sed gravida ultrices elit. Etiam viverra lacinia urna ac feugiat. In hac habitasse platea dictumst. Nam vulputate porta diam, ut condimentum ante. Etiam facilisis, nunc sed imperdiet elementum, ipsum ipsum congue massa, ac sagittis purus est quis ante. Etiam pulvinar justo eget fermentum euismod. Cras ut sollicitudin nibh. Sed sed finibus massa, nec ullamcorper ante. Aliquam erat volutpat. Vestibulum at fringilla ligula. Donec magna elit, vehicula sit amet posuere vel, tempus ut tellus.
-               
-               Donec ac ex non justo scelerisque ullamcorper. Morbi in lacinia eros. Aenean 
-
-aim : nec aliquet dui, at pharetra diam. Sed rutrum mi justo, id bibendum lectus scelerisque eu. Vestibulum sapien ligula, porttitor quis eros at, rutrum consequat tortor. Aenean et porttitor turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer interdum massa rhoncus enim bibendum blandit. Aliquam egestas quis velit viverra feugiat. Vivamus eget tempus sem, non egestas risus. Proin ut elementum ipsum. Nullam mollis, metus in euismod finibus, nibh purus vestibulum purus, vel euismod sem nisl sed risus. Vivamus risus augue, faucibus nec eleifend in, varius nec augue. Ut in nibh eu lacus dapibus ultrices. Cras at nunc eget dui auctor fringilla. Vivamus pretium sem vel ipsum tincidunt volutpat a ut felis.
-method : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies orci non nulla lacinia porttitor. Ut consequat lectus a elit ullamcorper porta. Phasellus aliquam massa feugiat ex volutpat, sed fringilla magna accumsan. Nulla consectetur vel eros ac egestas. Donec maximus ligula vel leo faucibus condimentum. In vitae elementum libero, a rutrum ligula. Nulla eu iaculis odio, nec tristique odio. Fusce id mauris justo. Morbi ipsum justo, gravida porttitor eros nec, molestie convallis ex. Cras lacinia ligula lacus. Fusce iaculis purus at leo fringilla pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-         Vivamus dictum sed velit ac molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet est imperdiet, finibus urna ac, rhoncus ex. Etiam semper urna nec tortor sodales, eu vehicula dolor fermentum. Nulla rutrum ipsum in lacus sollicitudin interdum. In semper sollicitudin auctor. Donec in dignissim elit, sit amet blandit ipsum. Ut elementum velit tellus, ac dapibus nisi venenatis ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent non nisi ultrices, vestibulum neque eget, condimentum tortor. Nullam porta arcu sed ultricies semper.
+introduction : 안드로이드 스튜디오를 활용하여 앱 개발의 기초를 다집니다.
+aim : 안드로이드 앱 기초 반은 다음과 같은 목표를 가지고 있습니다.
+      I. 레이아웃과 뷰를 활용하여 자신이 원하는 화면구조와 UI 를
+      만들 수 있다.
+      II. 위젯을 활용하여 다양한 기능을 구현할 수 있다.
+      III. 이벤트에 대한 개념을 이해하고, 적절한 리스너와 메소드를
+      활용하여 상호작용을 하는 앱을 만들 수 있다.
+      IV. 액티비티와 인덴트를 활용하여 화면간 이동과 화면전환을
+      구현할 수 있다.
+      V. 프래그먼트와 뷰페이져를 활용하여 바로가기 메뉴 바와 탭을
+      만들 수 있다.
+      해당 목표들을 사용해서 다음과 같은 앱을 만들 수 있습니다.
+      I. 자신을 소개하는 앱을 만들 수 있다.
+      II. 간단하게 내용을 기록할 수 있는 노트나 그림판 앱을 만들 수 있습니다.
+      스터디의 목표는 멘티들의 수준에 따라 변경이 가능하니, 참고용으로 봐주시면 됩니다!
+method : 수업은 월요일 18:30 ~ 20:10 총 100분이며, 이는 쉬는 시간 10분을 포함하고 있습니다.
+         강의는 멘토가 준비해 온 ppt로 진행이 되며, 멘토의 강의가 주를 이르되, 수업 중 멘티
+         의 질문은 장려되도록 합니다.
+         수업 중간중간에 있는 퀴즈와 실습을 통해 복습을 합니다.
+         실습은 그날 배운 내용을 종합해서 작은 결과물을 만드는 방식으로 진행합니다.
+         매 수업이 끝나면 과제가 나가며(첫 날 제외), 과제 관련 질문과 이에 대한 피드백은 활
+         발히 이루어지도록 합니다.
 remark : 임규민 방귀쟁이
 ---

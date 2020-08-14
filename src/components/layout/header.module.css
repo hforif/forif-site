@@ -1,18 +1,13 @@
 .wrapper{
     position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     top: 0;
     width: 100%;
     height: 60px;
-    padding: 0 75px;
     transition: 0.5s;
     background-color: rgba(255,255,255,0.7);
-
+    padding: 0 30px;
 }
-
-.logoWrapper {
+.logoWrapper{
     display: inline-block;
     height: 100%;
     margin: 0;
@@ -24,22 +19,19 @@
     padding: 10px;
     margin: 0;
 }
-
-.menuWrapper {
+.menuWrapper{
     display: inline-block;
+    float: right;
     height: 100%;
     vertical-align: middle;
 }
-
 .menuWrapper ul {
-    display: flex;
-    flex-direction: row;
     list-style: none;
     margin: 0;
     padding: 0;
     height: 100%;
-}
 
+}
 .menuWrapper ul li {
     line-height: 60px;
     margin: 0 15px;
@@ -71,19 +63,15 @@
 .menuLinkOn {
     text-decoration: none;
     font-size: 1.1rem;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(0,0,0,1);
 }
-
-.menuLinkOff {
+.menuLinkOff{
     text-decoration: none;
     font-size: 1.1rem;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0,0,0,0.4);
 }
-
-.menuLinkOff:hover {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 1);
-    transition: 0.5s ease-in-out;
+.menuLinkOff:hover{
+    color: rgba(0,0,0,1);
 }
 
 .hamburgerMenu{
@@ -123,7 +111,7 @@
         margin: 0 auto;
     }
     .menuWrapper{
-       display: none;
+        display: none;
     }
 
 }

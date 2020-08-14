@@ -65,7 +65,9 @@ export const pageQuery = graphql`
           date
           create
         }
+        html
       }
     }
   }
+}
 `

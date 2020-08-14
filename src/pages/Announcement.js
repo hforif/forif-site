@@ -20,8 +20,9 @@ export default function Studies({ data, location }) {
     </Layout>
   )
 }
-function Template({ frontmatter, html }) {
-  return (
+
+function Template({frontmatter, html}){
+  return(
     <div className={styles.announcementWrapper}>
       <div className={styles.frontmatter}>
         <h1
@@ -56,17 +57,17 @@ function Template({ frontmatter, html }) {
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { fields: frontmatter___number, order: DESC }) {
-      edges {
-        node {
-          frontmatter {
-            title
-            date
-            create
-          }
-          html
+  allMarkdownRemark (filter: {fileAbsolutePath: {regex: "/announcements/"}} sort:{fields: frontmatter___number, order: DESC}) {
+    edges {
+      node {
+        frontmatter {
+          title
+          date
+          create
         }
+        html
       }
     }
   }
+}
 `

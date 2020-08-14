@@ -1,0 +1,7 @@
+.feed {
+  max-width: 250px;
+  max-height: 250px;
+  float: left;
+  padding: 20px;
+  overflow: hidden;
+}

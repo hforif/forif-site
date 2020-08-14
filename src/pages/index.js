@@ -1,8 +1,23 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import Layout from "../components/layout/layout"
 import styles from "./index.module.css"
+import axios from "axios"
+import configs from "../configs"
+import Feed from "../components/about/instagramFeed"
 
 export default function Studies({ location }) {
+
+  const [instagrams, setInstagram] = useState([]);
+
+  useEffect(() => {
+    getInstagram();
+  }, [])
+
+  const getInstagram = async () => {
+    const res = await axios.get(`https://graph.instagram.com/me/media?fields=media_type,media_url,permalink&access_token=${configs.ACCESS_TOKEN}`)
+    setInstagram(res.data.data)
+  }
+
   return (
     <Layout sideList={0} pathName={location.pathname}>
       <div className={styles.layoutWrapper}>
@@ -97,6 +112,11 @@ export default function Studies({ location }) {
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </li>
           </ul>
+        </div>
+        <div className="temp feeds">
+          {instagrams.map(feed => (
+            <Feed thumnail={feed.media_url} link={feed.permalink} />
+          ))}
         </div>
       </div>
     </Layout>

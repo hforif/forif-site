@@ -1,11 +1,11 @@
-.bodyWrapper{
+.bodyWrapper {
     box-sizing: border-box;
     margin: 100px 210px 0px 210px;
     min-height: 1000px;
-    height:100%;
+    height: 100%;
 }
 
-.bodyWrapperNone{
+.bodyWrapperNone {
     width: 100%;
     box-sizing: border-box;
     margin-top: 100px;

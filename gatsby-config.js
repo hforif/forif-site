@@ -3,10 +3,21 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 
 module.exports = {
   /* Your site config here */
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'hackathon',
+        path: `${__dirname}/src/hackathon`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

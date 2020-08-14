@@ -45,7 +45,7 @@ export default function Layout({ sideList, setSideCurrent, pathName, children })
       <div className={styles[`bodyWrapper${(sideList === 0) ? `None` : ``}`]} ref={bodyRef}>
         {children}
       </div>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

@@ -1,58 +1,65 @@
-import React, {useEffect, useState} from "react"
+import React, { useEffect, useState } from "react"
 import renderHTML from "react-render-html"
+import { useTransition, useSpring, animated } from "react-spring"
 
 import Layout from "../components/layout/layout"
 import styles from "./Announcement.module.css"
 
-export default function Studies({ data, location }) {
-  const edges = data.allMarkdownRemark.edges;
-  const [onClickListener, setOnClickListener] = useState(-1);
-  const setIsVisibleList = [];
 
-  useEffect(()=>{
-    setIsVisibleList.map((func, index)=>{
-      if(index === onClickListener){
-        func(1);
+export default function Studies({ data, location }) {
+  const edges = data.allMarkdownRemark.edges
+  const [onClickListener, setOnClickListener] = useState(-1)
+  const setIsVisibleList = []
+
+  useEffect(() => {
+    setIsVisibleList.map((func, index) => {
+      if (index === onClickListener) {
+        func(1)
       } else {
-        func(0);
+        func(0)
       }
     })
-  },[onClickListener]);
+  }, [onClickListener])
 
   return (
     <Layout sideList={0} pathName={location.pathname}>
       <div className={styles.wrapper}>
         {edges.map((value, index) => {
           return (
-            <TemplatesWrapper value={value} index={index} key={index} setIsVisibleList={setIsVisibleList} setOnClickListener={setOnClickListener}/>
+            <TemplatesWrapper value={value} index={index} key={index} setIsVisibleList={setIsVisibleList}
+                              setOnClickListener={setOnClickListener}/>
           )
         })}
       </div>
     </Layout>
   )
 }
-function TemplatesWrapper({value, index, setIsVisibleList, setOnClickListener}){
-  const [isVisible,setIsVisible] = useState(0);
-  setIsVisibleList.push(setIsVisible);
-  const onClickResetEvent = () => setOnClickListener(-1);
-  const onClickEvent = () => setOnClickListener(index);
+
+function TemplatesWrapper({ value, index, setIsVisibleList, setOnClickListener }) {
+  const [isVisible, setIsVisible] = useState(0)
+  setIsVisibleList.push(setIsVisible)
+  const onClickResetEvent = () => setOnClickListener(-1)
+  const onClickEvent = () => setOnClickListener(index)
 
   return (
     <div>
-      <PreviewTemplate frontmatter={value.node.frontmatter} isVisible={isVisible} onClickEvent={onClickEvent} onClickResetEvent={onClickResetEvent}  />
+      <PreviewTemplate frontmatter={value.node.frontmatter} isVisible={isVisible} onClickEvent={onClickEvent}
+                       onClickResetEvent={onClickResetEvent}/>
       {(isVisible === 1) && <Template
         key={index}
+        isVisible={isVisible}
         frontmatter={value.node.frontmatter}
         html={value.node.html}
       />}
+
     </div>
   )
 }
 
-function PreviewTemplate({ frontmatter, isVisible, onClickEvent, onClickResetEvent}) {
+function PreviewTemplate({ frontmatter, isVisible, onClickEvent, onClickResetEvent }) {
   return (
-    <div onClick={()=>{
-      if(!isVisible) onClickEvent()
+    <div onClick={() => {
+      if (!isVisible) onClickEvent()
       else onClickResetEvent()
     }} className={styles.previewWrapper}>
       <span className={styles.previewFrontmatter}>{frontmatter.date}</span>
@@ -63,7 +70,16 @@ function PreviewTemplate({ frontmatter, isVisible, onClickEvent, onClickResetEve
 }
 
 function Template({ frontmatter, html }) {
+  const slideAnimation = useSpring({
+    opacity: 1,
+    transform: 'translateY(0px)',
+    from: {
+      opacity: 0,
+      transform: 'translateY(-50px)'
+    }
+  });
   return (
+    <animated.div style={slideAnimation}>
     <div className={styles.announcementWrapper}>
       <div className={styles.frontmatter}>
         <h1
@@ -93,6 +109,7 @@ function Template({ frontmatter, html }) {
       </div>
       {renderHTML(html)}
     </div>
+    </animated.div>
   )
 }
 

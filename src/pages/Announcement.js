@@ -82,13 +82,13 @@ function Template({ frontmatter, html }) {
     <animated.div style={slideAnimation}>
     <div className={styles.announcementWrapper}>
       <div className={styles.frontmatter}>
-        <h1
+        <h2
           style={{
             margin: "5px"
           }}
         >
           {frontmatter.title}
-        </h1>
+        </h2>
         <span
           style={{
             color: "gray",

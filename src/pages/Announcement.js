@@ -24,12 +24,14 @@ export default function Studies({ data, location }) {
   return (
     <Layout sideList={0} pathName={location.pathname}>
       <div className={styles.wrapper}>
-        {edges.map((value, index) => {
-          return (
-            <TemplatesWrapper value={value} index={index} key={index} setIsVisibleList={setIsVisibleList}
-                              setOnClickListener={setOnClickListener}/>
-          )
-        })}
+        {edges.map((value, index) => (
+            <TemplatesWrapper
+            value={value} 
+            index={index} 
+            key={index}
+            setIsVisibleList={setIsVisibleList}
+            setOnClickListener={setOnClickListener}/>
+        ))}
       </div>
     </Layout>
   )

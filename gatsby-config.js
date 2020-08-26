@@ -3,6 +3,10 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 
 module.exports = {
   /* Your site config here */
@@ -10,9 +14,23 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: 'hackathon',
+        path: `${__dirname}/src/hackathon`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `announcements`,
         path: `${__dirname}/src/announcements`,
       },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `studies`,
+        path: `${__dirname}/src/studies`,
+      }
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -27,4 +45,5 @@ module.exports = {
       }
     }
   ],
+  pathPrefix: `/publishtest`,
 }

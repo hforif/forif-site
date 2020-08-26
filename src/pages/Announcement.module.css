@@ -15,19 +15,54 @@
     margin: 15px 0px;
     background-color: #E0E0E0;
     border-radius: 10px;
+    z-index: -1000;
 }
 .frontmatter{
     border: 1px dotted black;
     border-right: 0px;
     border-left: 0px;
     padding: 5px;
-    margin: 0 50px;
+    margin: 0 50px 20px 50px;
+
     text-align: center;
 }
+
+.previewWrapper{
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-flex;
+    padding: 5px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid #e0e0e0;
+    cursor: pointer;
+}
+.previewFrontmatter{
+    margin: 0 5px;
+}
+.previewFrontmatter:nth-child(1){
+    margin-right: 10px;
+}
+.previewFrontmatter:nth-child(2){
+    flex-grow:1;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.previewFrontmatter:nth-child(3){
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
 
 /* PC (해상도 1024px)*/
 @media all and (min-width:1024px) {
     .announcementWrapper{
+        width: 1024px;
+    }
+    .previewWrapper{
         width: 1024px;
     }
 }

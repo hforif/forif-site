@@ -1,12 +1,12 @@
 .wrapper {
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     text-align: center;
     box-sizing: border-box;
     padding: 30px 10px;
 }
 
-.announcementWrapper{
+.announcementWrapper {
     width: 100%;
     box-sizing: border-box;
     display: inline-block;
@@ -15,7 +15,8 @@
     margin: 15px 0px;
     z-index: -1000;
 }
-.frontmatter{
+
+.frontmatter {
     border: 1px dotted black;
     border-right: 0px;
     border-left: 0px;
@@ -25,7 +26,7 @@
     text-align: center;
 }
 
-.previewWrapper{
+.previewWrapper {
     width: 100%;
     box-sizing: border-box;
     display: inline-flex;
@@ -36,20 +37,24 @@
     border-bottom: 1.5px solid #e0e0e0;
     cursor: pointer;
 }
-.previewFrontmatter{
+
+.previewFrontmatter {
     margin: 0 5px;
 }
-.previewFrontmatter:nth-child(1){
+
+.previewFrontmatter:nth-child(1) {
     margin-right: 10px;
 }
-.previewFrontmatter:nth-child(2){
-    flex-grow:1;
+
+.previewFrontmatter:nth-child(2) {
+    flex-grow: 1;
     text-align: left;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.previewFrontmatter:nth-child(3){
+
+.previewFrontmatter:nth-child(3) {
     flex-shrink: 0;
     flex-basis: auto;
 }
@@ -57,20 +62,17 @@
 
 /* PC (해상도 1024px)*/
 @media all and (min-width:1024px) {
-    .announcementWrapper{
+    .announcementWrapper {
         width: 1024px;
     }
-    .previewWrapper{
+
+    .previewWrapper {
         width: 1024px;
     }
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
-@media all and (min-width:768px) and (max-width:1023px) {
-
-}
+@media all and (min-width:768px) and (max-width:1023px) {}
 
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
-@media all and (max-width:767px) {
-
-}
+@media all and (max-width:767px) {}

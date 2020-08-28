@@ -22,7 +22,7 @@ export default function Studies({ data, location }) {
     <Layout sideList={studiesList} setSideCurrent={setShown} pathName={location.pathname}>
       <div className={styles.wrapper}>
         <div className={styles.title}>
-          <h1>{studiesData[shown].title}</h1>
+          <h2>{studiesData[shown].title}</h2>
         </div>
         <span className={styles.mentor}>멘토 {studiesData[shown].mentor}</span>
         <h3>소개</h3>

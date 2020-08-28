@@ -6,15 +6,16 @@ import configs from "../configs"
 import Feed from "../components/about/instagramFeed"
 
 export default function Studies({ location }) {
-
-  const [instagrams, setInstagram] = useState([]);
+  const [instagrams, setInstagram] = useState([])
 
   useEffect(() => {
-    getInstagram();
+    getInstagram()
   }, [])
 
   const getInstagram = async () => {
-    const res = await axios.get(`https://graph.instagram.com/me/media?fields=media_type,media_url,permalink&access_token=${configs.ACCESS_TOKEN}`)
+    const res = await axios.get(
+      `https://graph.instagram.com/me/media?fields=media_type,media_url,permalink&access_token=${configs.ACCESS_TOKEN}`
+    )
     setInstagram(res.data.data)
   }
 
@@ -22,10 +23,14 @@ export default function Studies({ location }) {
     <Layout sideList={0} pathName={location.pathname}>
       <div className={styles.layoutWrapper}>
         <div className={styles.imageWrapper}>
-          <img src="../images/mainImage.jpg" alt="mainImage" />
-          <img src="../images/mainImage2.jpg" alt="mainImage2" />
-          <img src="../images/mainImage3.jpg" alt="mainImage3" />
-          <img src="../images/mainImage4.jpg" alt="mainImage4" />
+          <div className={styles.carousel}>
+            <figure>
+              <img src="../images/mainImage.jpg" alt="mainImage" />
+              <img src="../images/mainImage2.jpg" alt="mainImage2" />
+              <img src="../images/mainImage3.jpg" alt="mainImage3" />
+              <img src="../images/mainImage4.jpg" alt="mainImage4" />
+            </figure>
+          </div>
           <div className={styles.textWrapperHorizontal}>
             <div className={styles.textFormat}>
               <p>

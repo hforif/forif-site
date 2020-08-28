@@ -58,15 +58,15 @@ function MenuList({pathName}){
   return (
     <ul>
       <li><Link to={"/Announcement"}
-                className={styles[`menuLink${pathName === `/Announcement` ? `On` : `Off`}`]}>Announcement</Link>
+                className={styles[`menuLink${pathName === `/Announcement` ? `On` : `Off`}`]} style={{textDecoration:'none'}}>Announcement</Link>
       </li>
       <li><Link to={"/Staffs"}
-                className={styles[`menuLink${pathName === `/Staffs` ? `On` : `Off`}`]}>Staffs</Link>
+                className={styles[`menuLink${pathName === `/Staffs` ? `On` : `Off`}`]} style={{textDecoration:'none'}}>Staffs</Link>
       </li>
       <li><Link to={"/Studies"}
-                className={styles[`menuLink${pathName === `/Studies` ? `On` : `Off`}`]}>Studies</Link></li>
+                className={styles[`menuLink${pathName === `/Studies` ? `On` : `Off`}`]} style={{textDecoration:'none'}}>Studies</Link></li>
       <li><Link to={"/Hackathon"}
-                className={styles[`menuLink${pathName === `/Hackathon` ? `On` : `Off`}`]}>Hackathon</Link></li>
+                className={styles[`menuLink${pathName === `/Hackathon` ? `On` : `Off`}`]} style={{textDecoration:'none'}}>Hackathon</Link></li>
     </ul>
   )
 }

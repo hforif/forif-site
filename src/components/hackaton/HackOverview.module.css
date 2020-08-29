@@ -10,24 +10,27 @@
 .productCells{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 5%;
 }
 
 
 .productCell{
     width: 150px;
-    height: 150px;
+    height: 180px;
+    padding: 0 10px;
+    margin-bottom: 15px;
 }
 
 .productImage {
-    margin-bottom: 5px;
-    width: 85px;
-    height: 85px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
     background-color: gray;
 }
 
 .productName {
-    text-align: left;
-    font: 18px;
+    text-align: center;
+    font: 23px;
     font-weight: normal;
     letter-spacing: 0px;
     color: #6E6C6C;
@@ -78,4 +81,70 @@
 
 .modalDesc{
     
+}
+
+
+/* MEDIA */
+
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    .semester{
+        font-size: 18px;
+    }
+    .productCell{
+        width: 125px;
+        height: 160px;
+        margin-bottom: 10px;
+    }
+    
+    .productImage {
+        margin-bottom: 12px;
+    }
+    
+    .productName {
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .semester{
+        font-size: 16px;
+    }
+    .productCell{
+        width: 120px;
+        height: 135px;
+        margin-bottom: 5px;
+    }
+    
+    .productImage {
+        margin-bottom: 10px;
+    }
+    
+    .productName {
+        font-size: 13px;
+    }
+}
+
+/* Mobile(Portrait) */
+@media (max-width: 480px) {
+    .semester{
+        font-size: 13px;
+    }
+    .productCells{
+        min-width: 360px;
+    }
+    .productCell{
+        width: 115px;
+        height: 150px;
+        margin-bottom: 5px;
+    }
+    
+    .productImage {
+        margin-bottom: 10px;
+    }
+    
+    .productName {
+        font-size: 11px;
+    }
 }

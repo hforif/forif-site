@@ -131,9 +131,6 @@
     .semester{
         font-size: 13px;
     }
-    .productCells{
-        min-width: 360px;
-    }
     .productCell{
         width: 115px;
         height: 150px;

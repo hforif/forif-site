@@ -116,12 +116,6 @@
     .jobTitle{
         font-size: 13px;
     }
-    .profileCells {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        min-width: 455px;
-    }
     .profileImage {
         width: 35px;
         height: 35px;
